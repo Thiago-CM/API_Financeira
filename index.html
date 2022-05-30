@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moeda</title>
 </head>
 <body>
     <header>
         <h1>CONVERSÃO DE MOEDA</h1>
     </header>
     <main>
-        <div>
-            <label for="Uf">Real:</label>
-            <input type="number" id="real">
+        <div class="real">
+           
+            <label for="Uf">REAL</label>
+            <br>
+            <input type="number" id="real" placeholder="0,00">
+            <br>
             <button id="pesquisar">CONVERSÃO</button>
         </div>
-        <div>
-            <label for="Uf">Dolar:</label>
+        <div class="moedas" > 
+            
+            <label for="Uf">DÓLAR</label>
+            <br>
             <input type="number" id="dolar" readonly>
-            <label for="Uf">Euro:</label>
+            <br>
+            <label for="Uf">EURO</label>
+            <br>
             <input type="number" id="euro"  readonly>
         </div>
     </main>
     <footer>
+        <p>Página desenvolvida para testar API.</p>
+        <p>Fonte dos dados: https://hgbrasil.com/status/finance</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
